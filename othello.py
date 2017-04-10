@@ -100,7 +100,7 @@ def makeMove(board, tile, xstart, ystart):
     if tilesToFlip == False:
         return False
     board[xstart][ystart] = tile
-    for x,y in tilesToFlip
+    for x,y in tilesToFlip:
         board[x][y] = tile
     return True
 
@@ -134,4 +134,3 @@ def getPlayerMove(board, playerTile):
     return [x,y]
 
 def getComputerMove(board, computerTile):
-    
